@@ -18,6 +18,24 @@
         اللي إنت اتابعها Animeتحتوي على مسلسلات ال myAnime المصفوفة الأولى
         اللي رفيجك يتابعها Animeتحتوي على مسلسلات ال myFriendAnime المصفوفة الثانية
       */
+     let myAnime = ['Dr.Stone', 'AttackOnTitan', 'BungoStrayDogs', 'Haikyuu']
+
+     let myFriendAnime = ['Naruto', 'AttackOnTitan', 'DeathNote', 'BungoStrayDogs']
+
+     let mutualAnime = []
+
+     for (let MYindex = 0; MYindex < myAnime.length; MYindex++) {
+       const MYelement = myAnime[MYindex];
+        for (let index = 0; index < myFriendAnime.length; index++) {
+          const element = myFriendAnime[index];
+          if (MYelement == element){
+            mutualAnime.push(MYelement)
+          }
+        }
+     }
+
+     
+     console.log(mutualAnime)
 
       // 2
       // mutualAnime عرف مصفوفة فاضية سمها
